@@ -1,0 +1,54 @@
+;Integrantes:
+;Gonzalez Saldivar Luis Roberto
+;Martinez Reyes Fernando
+INCLUDE Irvine32.inc
+.data
+; Área de Declaración de Variables
+INGRESA_NUMERO_19 DB "Ingresa un numero a checar:", 0
+RESULTADO_SI_19 DB "EL NUMERO ES PRIMO", 0
+RESULTADO_NO_19 DB "EL NUMERO NO ES PRIMO", 0
+CONTADOR_19 DWORD 0
+
+.code
+     main22 PROC
+          ;Lógica del Programa
+          MOV EDX, OFFSET INGRESA_NUMERO_19
+		CALL WRITESTRING
+		CALL READINT ;NUMERO QUE SE VA A CHECAR = EAX
+
+		MOV EBX, 0 ;CANTIDAD DE DIVISIONES EXACTAS QUE EXISTEN
+
+		MOV ECX, EAX ;PARA DEFINIR LA CANTIDAD A REALIZAR
+		DEC ECX
+
+		CICLO:
+			MOV EAX, EBX
+			MOV EDX, 0
+			DIV ECX ; EAX/ECX
+			CMP ECX, 0
+			JNZ SALTA_A_LOOP
+
+			INC CONTADOR_19
+
+			SALTA_A_LOOP:
+				LOOP CICLO
+
+		;MOV EAX, CONTADOR_19
+		;CALL WRITEDEC
+
+		CMP CONTADOR_19,1
+		JNZ NO_ES_PRIMO
+			MOV EDX, OFFSET RESULTADO_SI_19
+			JMP CONTINUAR
+
+		NO_ES_PRIMO:
+			MOV EDX, OFFSET RESULTADO_NO_19
+
+		CONTINUAR:
+			CALL WRITESTRING
+
+                
+
+          exit          
+     main22 ENDP
+     END main22

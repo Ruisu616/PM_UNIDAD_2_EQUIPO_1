@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Object Include="..\..\..\..\..\..\..\..\Irvine\Lib32\Irvine32_Library\Irvine32.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="P_0_Plantilla.asm" />
+    <MASM Include="P_1_Condicionales.asm" />
+    <MASM Include="P_2_ChecarNumeroEsPar.asm" />
+    <MASM Include="P_3_LecturaNumeros.asm" />
+    <MASM Include="P_4_EscrituraConsola.asm" />
+    <MASM Include="P_5_SumaDosNumeros.asm" />
+    <MASM Include="P_6_Promedio_3Numeros_.asm" />
+    <MASM Include="P_7_AreaRectangulo.asm" />
+    <MASM Include="P_8_PuntoMedio.asm" />
+    <MASM Include="E_1_AreaTriangulo.asm" />
+    <MASM Include="E_2_CalcularCuadradoNumero.asm" />
+    <MASM Include="E_3_PerimetroRectangulo.asm" />
+    <MASM Include="E_4_AreaPentagono.asm" />
+    <MASM Include="E_5_SueldoTrabajador.asm" />
+    <MASM Include="E_6_Promedio5Materias.asm" />
+    <MASM Include="E_7_CalcularValorAbsoluto.asm" />
+    <MASM Include="E_8_Mayor_Menor_Igual.asm" />
+    <MASM Include="P_9_IntroduccionaLOOP.asm" />
+    <MASM Include="P_10_Checar_Pares_con_Loop.asm" />
+    <MASM Include="E_9_SumasSucesivas.asm" />
+    <MASM Include="E_10_CalcularPromedioN.asm" />
+    <MASM Include="E_11_Factorial_N_Numeros.asm" />
+    <MASM Include="P_11_NumerosPrimos.asm" />
+    <MASM Include="E_12_TablaMultiplicar.asm" />
+    <MASM Include="P_12_PilaEnEnsamblador.asm" />
+    <MASM Include="P_13_IntroPila.asm" />
+    <MASM Include="P_14_Instruccion_XCHG.asm" />
+    <MASM Include="E_13_CambiarValoresPila.asm" />
+  </ItemGroup>
+</Project>
